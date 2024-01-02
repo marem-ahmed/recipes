@@ -27,6 +27,9 @@ function login() {
             localStorage.setItem('currentSession', userData[i].Name)
             ancor.setAttribute("href", "welcome.html");
 
+        } else{
+        document.querySelector("#InputsSignIn").nextElementSibling.textContent = "Email or Password in correct"
+
         }
     }
 }
