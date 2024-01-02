@@ -1,5 +1,5 @@
 if(!localStorage.getItem("all data")){
-    window.location.replace("signup.html")
+    window.location.replace("signIn.html")
 }
 let data=[];
 const links= Array.from(document.querySelectorAll('.home .nav-link'));
@@ -43,3 +43,10 @@ cols+=`
 document.getElementById('rowRecipts').innerHTML=cols;
 }
 displayRecipes()
+
+const btn=document.querySelector("#logoutBtn")
+btn.addEventListener('click',logOut)
+function logOut(){
+    localStorage.removeItem("currentSession")
+    window.location.replace("signIn.html")
+}
