@@ -1,0 +1,32 @@
+.img-height{
+    height: 15.625rem;
+}
+.card,.nav-link{
+    cursor: pointer;
+}
+.signUp,.signIn{
+    background-image: url(../imges/welcomebackground.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+.signUpForm ,.signInForm{
+    box-shadow: 5px 5px 5px gray;
+    width: 55vh;
+}
+#body{
+    background-image: url(../imges/bg-home-food.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.weclomeMsg{
+    font-weight: 800;
+}
+.recipesList{
+    background-image: url(../imges/bg-home-food.jpg)
+}
+@media screen and ( min-width:320px) and (max-width:600px) {
+    .signUp,.signIn,.recipesList{
+background-image: none;
+background-color: black;
+}
+}
