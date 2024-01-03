@@ -1,6 +1,6 @@
 if(!localStorage.getItem("all data")){
     window.location.replace("signup.html")
-}
+};
 let data=[];
 const links= Array.from(document.querySelectorAll('.home .nav-link'));
 for (let i = 0; i < links.length; i++) {
