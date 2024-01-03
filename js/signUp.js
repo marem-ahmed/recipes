@@ -32,8 +32,7 @@ function signUp() {
         userData.push(info)
         localStorage.setItem('all data', JSON.stringify(userData))
         message.textContent = "success"
-          localStorage.setItem('currentSession', userData[i].Name)
-         ancor.setAttribute("href", "welcome.html");
+
 
     }
 }
